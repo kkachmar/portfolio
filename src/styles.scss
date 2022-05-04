@@ -18,8 +18,12 @@ li {
   margin-bottom: 2px;
 }
 
+h3 {
+  margin-top: 5vh;
+}
+
 .darker {
-  background-color: #20202015 !important
+  background-color: #20202015 !important;
 }
 
 .circuit-dark {
@@ -61,7 +65,7 @@ li {
   border-style: solid;
   border: 5px !important;
   padding: 3px;
-  color:white;
+  color: white;
   width: 100%;
   max-width: 400px;
   border-radius: 10vw;
@@ -132,7 +136,6 @@ p {
     overflow: scroll;
   }
 }
-
 
 @media screen and (max-width: 850px) {
   .mobile-hide {

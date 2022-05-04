@@ -11,6 +11,8 @@ import { MicrositeComponent } from './microsite/microsite.component';
 import { TktsComponent } from './tkts/tkts.component';
 import { MacRedesignComponent } from './mac-redesign/mac-redesign.component';
 import { PlatformerGameComponent } from './platformer-game/platformer-game.component';
+import { BudgetBuddyComponent } from './budget-buddy/budget-buddy.component';
+import { TypeBookletComponent } from './type-booklet/type-booklet.component';
 
 
 
@@ -27,7 +29,9 @@ import { PlatformerGameComponent } from './platformer-game/platformer-game.compo
     MicrositeComponent,
     TktsComponent,
     MacRedesignComponent,
-    PlatformerGameComponent
+    PlatformerGameComponent,
+    BudgetBuddyComponent,
+    TypeBookletComponent
   ],
   imports: [
     CommonModule

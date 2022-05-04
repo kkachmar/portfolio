@@ -81,7 +81,7 @@ export class PortfolioComponent implements OnInit {
           displayName: '2D Platformer Game', 
           shortDescription: 'A simple platformer game inherited and improved upon by my software development team. Under the guidance of a project manager, we worked together to improve the exsiting product.',
           headerImage: ' assets/platformer-game/game-animation.gif',
-          tags: ['FRONTEND DEVELOPMENT', 'ANGULAR', 'UI DESIGN'] 
+          tags: ['AGILE', 'JAVA', 'GAME DEVELOPMENT'] 
         },
         
         

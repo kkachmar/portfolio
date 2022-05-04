@@ -1,3 +1,6 @@
+import { TypeBookletComponent } from './home/type-booklet/type-booklet.component';
+import { BudgetBuddyComponent } from './home/budget-buddy/budget-buddy.component';
+import { MacRedesignComponent } from './home/mac-redesign/mac-redesign.component';
 import { PlatformerGameComponent } from './home/platformer-game/platformer-game.component';
 import { TktsComponent } from './home/tkts/tkts.component';
 import { MicrositeComponent } from './home/microsite/microsite.component';
@@ -14,6 +17,10 @@ const routes: Routes = [
   {path: 'microsite', component: MicrositeComponent},
   {path: 'tkts', component: TktsComponent},
   {path: 'platformer-game', component: PlatformerGameComponent},
+  {path: 'mac-redesign', component: MacRedesignComponent},
+  {path: 'budget-buddy', component: BudgetBuddyComponent},
+  {path: 'type-booklet', component: TypeBookletComponent},
+
   {path: '**', redirectTo: ''}
 ];
 
