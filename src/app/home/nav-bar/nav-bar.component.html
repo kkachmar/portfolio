@@ -1,0 +1,14 @@
+<div class="nav-bar">
+    <img (click)="redirect('')" src="assets/home/logo.png" style="height: 5vh; min-height: 20px"/>
+    <div *ngIf="mobileMenu" id="toggle" class="icon" (click)="toggleMenu()">
+        <label for="toggle"><img [src]="menuIcon" style="height: 2vh; min-height: 20px"></label>
+    </div>
+    <div *ngIf="menuVisible" class="menu">
+        <ul class="list">
+            <li>Work</li>
+            <li>About</li>
+            <li>Contact</li>
+            <li><div style="padding-left: .5vw"></div></li>
+        </ul>
+    </div>
+</div>

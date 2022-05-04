@@ -1,0 +1,27 @@
+<div class="page">
+    <div style="justify-content: center; display: flex;">
+        <app-landing #top style="width: 100vw !important"></app-landing>
+    </div>
+
+    <div class="arrow" (click)="scroll(portfolio)">
+        <img src="assets/home/Icon metro-chevron-thin-down.png">
+    </div>
+</div>
+<div class="to-top" (click)="scroll(portfolio)">
+   <a href="#top"><img src="assets/home/back-to-top.png"></a>
+</div>
+
+<div [ngClass]="{'black': portfolioView}" *ngIf="sections" class="section mobile-hide">
+    <h2>{{sections[current].bold}}<span class="lighter">{{sections[current].light}}</span></h2>
+    <h4>{{sections[current].subtitle}}</h4>
+</div>
+<div class="page portfolio" #portfolio>
+    <div>
+        <app-portfolio section="ux"></app-portfolio> 
+    </div> 
+</div>
+<div class="page portfolio" #csPortfolio>
+    <div>
+        <app-portfolio section="cs"></app-portfolio> 
+    </div> 
+</div>

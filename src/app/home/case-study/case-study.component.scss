@@ -1,0 +1,160 @@
+@import url("./../../../styles.scss");
+
+.container {
+  margin-top: 4vw;
+  height: fit-content;
+  width: 100vw;
+  background-color: white;
+  display: block;
+}
+
+.banner {
+  height: 26vw;
+  width: 100vw;
+  text-align: center;
+  background-color: #202020;
+  //background-image: url("assets/home/background.png");
+
+  img {
+    margin-top: 3vw;
+    width: 60vw;
+    text-align: center;
+    z-index: 1;
+  }
+}
+
+.full-width {
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+
+.title {
+  margin-top: 17vw;
+
+  h1 {
+    text-align: center;
+    font-size: 5vh;
+    margin: 0;
+    //color: #8be8cb;
+    color: #202020;
+  }
+
+  h2 {
+    font-weight: 400;
+    margin-top: 0.5vh;
+    text-align: center;
+  }
+}
+
+.content {
+  margin-top: 0vw;
+
+  .full-width {
+    padding-top: 2vw;
+
+    .left-image {
+      display: inline-flex;
+      img {
+        width: 27.5vw;
+        margin-right: 2.5vw;
+      }
+
+      .text {
+        width: 27.5vw;
+        margin-left: 2.5vw;
+
+        h2 {
+          font-weight: 500;
+        }
+      }
+    }
+
+    .right-image {
+      display: inline-flex;
+      img {
+        width: 27.5vw;
+        margin-left: 2.5vw;
+      }
+
+      .text {
+        width: 27.5vw;
+        margin-right: 2.5vw;
+
+        h2 {
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  h1 {
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .banner {
+    padding-top: 50px;
+  }
+
+  .title {
+    padding-top: 100px;
+    text-align: center;
+    margin: 0 !important;
+  }
+
+  .full-width {
+    max-width: 80vw !important;
+    width: 70vw !important;
+    text-align: left !important;
+    margin: 0px;
+
+    .left-image {
+      display: flex;
+      flex-wrap: wrap;
+
+      .text {
+        min-width: 60vw;
+        margin: 0 !important;
+      }
+      img {
+        min-width: 60vw;
+        margin: 0 !important;
+      }
+    }
+
+    .right-image {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0;
+
+      .text {
+        min-width: 60vw;
+      }
+
+      img {
+        min-width: 60vw;
+        margin: 0 !important;
+      }
+    }
+
+    h1 {
+      display: block;
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+
+  .image {
+    width: 75vw !important;
+    margin-left: -8%;
+  }
+
+  .project {
+    padding-left: 15vw;
+  }
+}

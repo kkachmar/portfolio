@@ -1,0 +1,59 @@
+.arrow {
+  position: absolute;
+  top: 91%;
+  left: 50%;
+
+  img {
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.5);
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+}
+
+.to-top {
+  position: fixed;
+  top: 20%;
+  right: 2.7%;
+  opacity: 25%;
+
+  img {
+    width: 1.5vw;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.2);
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+}
+
+.section {
+  position: fixed;
+  bottom: 16vh;
+  left: -5vw;
+  transform: rotate(-90deg);
+  color: rgb(227, 227, 227) !important;
+  animation: color_change 20s;
+
+  h2 {
+    font-size: 5vh;
+    margin: 0;
+    font-weight: 500;
+  }
+  h4 {
+    margin: 0;
+    margin-top: -0.5vw;
+    font-weight: 400;
+    font-size: 2vh;
+  }
+
+  .white {
+    color: rgb(227, 227, 227) !important;
+  }
+}
+
+.black {
+  color: #202020 !important;
+}

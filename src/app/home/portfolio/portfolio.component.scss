@@ -1,0 +1,135 @@
+@import url("./../../../styles.scss");
+
+.container {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  background-color: white !important;
+  display: block;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  padding-left: 14vw;
+  padding-top: 6vh;
+  padding-bottom: 4vh;
+
+  h1 {
+    font-size: 3vh;
+    align-items: center;
+    margin-bottom: 0;
+    margin-top: -2vh;
+
+    img {
+      margin: 0;
+      position: relative;
+      top: 0.5vh;
+      margin-left: 0.5vw;
+      width: 8%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.1) translateX(1vw);
+      transition: transform 0.25s ease-in-out;
+    }
+  }
+
+  p {
+    font-size: 2vh;
+    font-weight: 300;
+  }
+
+  .text {
+    width: 25vw;
+  }
+
+  .image {
+    width: 50vw;
+    text-align: center;
+  }
+
+  img {
+    max-width: 85%;
+    height: auto;
+    width: auto\11; /* ie8 */
+    margin-top: 1.25em;
+    margin-bottom: 1em;
+    margin-left: 3vw;
+  }
+
+  .description {
+    border-style: solid;
+    border-color: #8be8cb;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    border-width: 3px;
+    max-width: 30vw;
+    margin-top: -1vh;
+
+    p {
+      padding-left: 1vw;
+      padding-top: 0.5vw;
+      padding-bottom: 0.5vw;
+    }
+  }
+}
+
+.tags {
+  ul {
+    list-style-type: none;
+    margin: 0;
+    margin-bottom: 0vh;
+    padding: 0;
+    display: inline;
+    float: left;
+    color: #20202050;
+    width: 100%;
+  }
+
+  li {
+    display: inline;
+    float: left;
+    margin-right: 1vw;
+    margin-bottom: 0.5vh;
+    margin-top: 0.5vh;
+    font-size: 1.5vh;
+    max-height: 3vh;
+
+    &:hover {
+      cursor: pointer;
+      opacity: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .flex-adjust {
+    max-width: 80vw !important;
+    width: 70vw !important;
+    text-align: left !important;
+    margin-left: 0px;
+
+    h1 {
+      display: block;
+      text-align: left;
+      margin-left: 0;
+    }
+  }
+
+  .image {
+    width: 75vw !important;
+    margin-left: -8vw !important;
+  }
+
+  .project {
+    padding-left: 15vw;
+    margin-bottom: 2vh !important;
+  }
+}

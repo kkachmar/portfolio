@@ -1,0 +1,178 @@
+$black: #202020 !default;
+$green: #8be8cb !default;
+$dark-green: #4da58a !default;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #202020;
+  font-family: "Poppins", sans-serif;
+  color: #202020;
+  display: block;
+  margin: 0 !important;
+}
+
+li {
+  margin-bottom: 2px;
+}
+
+.darker {
+  background-color: #20202015 !important
+}
+
+.circuit-dark {
+  background-image: url("assets/home/background.png");
+  background-attachment: scroll;
+  background-color: #202020;
+}
+
+.button-box {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-large {
+  background-color: $dark-green;
+  border: none;
+  padding: 3px;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10vw;
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.25s ease-in-out;
+    opacity: 50%;
+  }
+}
+
+.button-secondary-large {
+  background-color: #202020;
+  border-style: solid;
+  border: 5px !important;
+  padding: 3px;
+  color:white;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10vw;
+  text-align: center;
+  margin-bottom: 5vh;
+  font-family: "Poppins", sans-serif;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.25s ease-in-out;
+    opacity: 50%;
+  }
+}
+
+.page {
+  height: fit-content;
+  min-height: 100vh;
+}
+
+.portfolio {
+  background-color: white;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.lighter {
+  font-weight: 300;
+}
+
+p {
+  font-size: 2vh;
+  font-weight: 400;
+}
+
+.half-width {
+  width: 46%;
+}
+
+.thirds-width {
+  max-width: 28%;
+}
+
+.two-thirds-width {
+  max-width: 60%;
+}
+
+.multi-img {
+  display: flex;
+  align-items: flex-start;
+  width: 60vw;
+}
+
+.iframe-class {
+  box-shadow: 10px 5px 5px #202020;
+
+  iframe {
+    overflow: scroll;
+  }
+}
+
+
+@media screen and (max-width: 850px) {
+  .mobile-hide {
+    display: none;
+  }
+
+  .no-mobile-margin {
+    margin-top: 0px;
+  }
+
+  .page {
+    min-height: 90vh !important;
+  }
+
+  .half-width {
+    width: 100%;
+    margin: 0;
+  }
+
+  .thirds-width {
+    width: 100%;
+    margin: 0;
+  }
+
+  .two-thirds-width {
+    margin: 0;
+    width: 100%;
+  }
+
+  .study-title {
+    h2 {
+      font-size: 1em;
+    }
+  }
+
+  .button-box {
+    justify-content: left;
+  }
+
+  .button {
+    width: 100% !important;
+  }
+}

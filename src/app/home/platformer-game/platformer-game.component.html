@@ -1,0 +1,180 @@
+<div class="page" style="width: 100vw; margin-top: 9vh">
+    <div class="container">
+        <div class="banner" style="margin-bottom: -2vh">
+            <img  style="width: 102vw" src="assets/platformer-game/banner.gif"/>
+        </div>
+        <div class="full-width title" style="background-color: white;">
+            <h1>Platformer Game</h1>
+            <div class="mobile-hide" style="width: 70%; background-color: #8be8cb; height: 2px; margin-left: 15%; margin-top: 1vh; margin-bottom: 1vh;"></div>
+            <h2 style="font-size: 1em; width: 70%; margin-left: 15%;">A simple platformer game inherited and improved upon by my software development team. Under the guidance of a project manager, we worked together to improve the exsiting product.
+            </h2>
+        </div>
+        <div class="content">
+            <div class="full-width">
+                <div class="section-title">
+                    <h1>CHALLENGE</h1>
+                </div>
+                <p>
+                    This was a 2D platformer game initally created by another developer.  As a simple platformer game, the user controlled a cat avatar that navigated around the map to reach a gold box at the end of the level.
+                    Our task was to use the software we inherited to repair bugs, add enhancements, and improve the game overall. I worked on a team comprised of four software developers under the direction of a product manager.
+                    <br>
+                    <br>
+                    The development process was split up into several components: </p>
+                    <ul>
+                        <li>Program Review and Assessment</li>
+                        <li>Customer Requirements (User Testing)</li>
+                        <li>Prioritizing Bugs and Enhancements</li>
+                        <li>4 Scrum Cycles</li>
+                        <li>Final Report</li>
+                    </ul>
+
+                
+                <br>
+            </div>
+            <div class="full-width darker">
+                <div class="section-title">
+                    <h1>USER TESTING</h1>
+                </div>
+
+                <div class="right-image">
+                    <br>
+                    <div class="text">
+                        <p>
+                            We conducted user testing to gain feedback on the game and to identify necessary bugs and enhancements. After the team and 
+                            outside users tested the game, we gathered the following recommendations: 
+                        </p>
+
+                        <ul>
+                            <li>Fix game-breaking bugs</li>
+                            <li>Provide instructions on how to play</li>
+                            <li>Increase the difficulty level of the game</li>
+                            <li>Create more interactive elements (enemies, something to collect, etc.)  </li>
+                            <li>Add a points system to keep the player engaged </li>
+                            <li>Interactive obstacles (water, plants, etc)</li>
+                            <li>Pause needs more functions, able to restart game, exit to main menu </li>
+                            <li>The player should have a way to defeat enemies</li>
+                            <li>Implement background music and sound effects</li>
+                            <li>Add momentum-based movements</li>
+                            <li>Increase level length and add more levels</li>
+                            <li>Improve user interface (show lives, coins collected, enemies defeated, etc)</li>
+                        </ul>
+                        
+                        <br>
+                    
+                </div>
+                </div>
+            </div>
+            <div class="full-width">
+                <div class="section-title">
+                    <h1>DEVELOPMENT PLAN</h1>
+                </div>
+
+                <div class="right-image">
+                    <div class="text">
+                        <p>
+                            Once user testing was conducted, development plan was created and tasks prioritized based on their impact on gameplay and user requests.
+                        <br>
+                        <div class="image-div full-image">
+                            <img src="assets/platformer-game/dev-plan.png">
+                        </div>
+                        <h3> Instructions for controls and option</h3>
+                        Add instructions for controls and option to use WASD keys in addition to the arrowkeys
+                        <h3>Ability to walk off the map </h3>
+                        <p>Prevent avatar from walking off the map and getting stuck off screen</p>
+                        <h3>Game Over Screen </h3>
+                        <p>Add game over screen when avatar falls off the map at the bottom of the screen</p>
+                        <h3>Interaction with water </h3>
+                        <p>Add feature so cat is harmed when it touches the water map tiles</p>
+                        <h3>Dinosaur Attack </h3>
+                        <p>Fix lagging dinosaur attack animation</p>
+                        <h3>Degree of Difficulty </h3>
+                        <p>Add additional levels of difficulty to make the game longer and more engaging</p>
+                        <h3>Ability to kill enemies </h3>
+                        <p>Add an attack feature so user can do more than simply avoid enemies</p>
+                        <h3>Pause Button </h3>
+                        <p>Only allow user to pause game during gameplay, not on menu screens</p>
+                        <h3>Overriding of Keys </h3>
+                        <p>Have most recent keystroke override previous keystrokes</p>
+                    <br>
+                </div>
+                </div>
+            </div>
+            <div class="full-width darker">
+                    <div class="section-title">
+                            <h1>IMPLEMENTATION</h1>
+                    </div>
+                    <div class="right-image">
+                        <div class="text">
+                            <p>
+                                Below are the enhancements I personally worked on for this project. 
+                                For the full project, please view our <a href="https://github.com/JDugganQuinnipiac/SER-225-Game">GitHub</a> repository.
+                            </p>
+                            <br>
+
+                            <div class="section-title">
+                                <h2>INTERACTION WITH WATER</h2>
+                            </div>
+                            <div class="image-div">
+                                <img class="rotate" src="assets/platformer-game/code-example.jpeg">
+                            </div>
+                            <p>
+                                I worked as part of a team to enhance the water map tile. The goal was to have it call the hurtPlayer() function that ultimately leads to a game over when the cat avatar falls into it.
+                                <br><br>
+                                In order to do so, our Player class had to recognize that the tile object it intersecting was labeled as our 
+                                new TileType variable, "TileType.KILLER".  If it was true that the tile was of type "KILLER," we then called 
+                                the hurtPlayer() function utilized by enemies in the game.
+                            </p>
+                            <h3>Gameplay Example</h3>
+                            <div class="image-div full-image">
+                                <img src="assets/platformer-game/water-example.gif">
+                            </div>
+
+
+                            <br>
+
+
+                            <div class="section-title">
+                                <h2>ATTACK FEATURE</h2>
+                            </div>
+                            <div class="image-div">
+                                <img class="rotate" src="assets/platformer-game/power-up-code.jpeg">
+                            </div>
+                            <p>
+                                I worked as part of a team to add an attack feature to the game. 
+                                Many users complained that there was no way for the cat to fight back against the enemies.
+                                <br><br>
+                                I decided to make a version of the Fireball class, FriendlyFire, and use this to implement 
+                                a power-up that can be used to defeat enemies. Interacting with and instance of FriendlyFire 
+                                caused an enemy to be removed from the map, rather than harming the player. We also developed a 
+                                sprite of a "force field" that served as the enemy's attack. 
+                                <br><br>
+                                In order to make the game more realistic, we created a boolean called hasPowerUp that was not 
+                                set to true until the player came into contact with a purple flower map tile. Once hasPowerUp was 
+                                true, pressing the space bar would generate an instance of the force field in the direction the 
+                                player was facing, allowing the player to remove enemies from the map.
+
+
+                            </p>
+                            <h3>Gameplay Example</h3>
+                            <div class="image-div full-image">
+                                <img src="assets/platformer-game/force-field.gif">
+                            </div>
+
+                            <div class="button-box" style="display: block; text-align: center;">
+                                <button class="button-large" onclick=" window.open('https://github.com/JDugganQuinnipiac/SER-225-Game','_blank')">
+                                    <h2>View on GitHub</h2>
+                                </button>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+            </div>
+
+                    
+            
+    
+    </div>
+</div>
+

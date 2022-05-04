@@ -1,0 +1,26 @@
+<div *ngIf="viewMode == 'individual'" style="">
+    <div class="container" *ngFor="let item of portfolioItems">
+        <div class="project">
+            <div class="left text flex-adjust">
+                <div class="tags">
+                    <ul>
+                        <li *ngFor="let tag of item.tags">{{tag}}</li>
+                    </ul>
+                </div>
+                <br>
+                <h1 (click)="redirect(item.name)">{{item.displayName}} <img src="assets/portfolio/arrow-right.png"></h1>
+                <div class="description flex-adjust">
+                    <p>{{item.shortDescription}}</p>
+                </div>
+            </div>
+            <div>
+                <div *ngIf="item.name != 'platformer-game'" class="right image column">
+                    <img src={{item.headerImage}}>
+                </div>
+                <div *ngIf="item.name == 'platformer-game'" class="right image column">
+                    <img style="border-radius: 10px; box-shadow: 6px 5px 10px #20202050;"src={{item.headerImage}}>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
