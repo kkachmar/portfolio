@@ -51,4 +51,8 @@ export class NavBarComponent implements OnInit {
     window.scrollBy(0, window.innerHeight);
   }
 
+  toTop() {
+    window.scrollTo(0, 0)
+  }
+
 }

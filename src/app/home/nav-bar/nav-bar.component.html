@@ -1,5 +1,5 @@
 <div class="nav-bar">
-    <img (click)="redirect('')" src="assets/home/logo.png" style="height: 5vh; min-height: 20px"/>
+    <img (click)="redirect(''); toTop()" src="assets/home/logo.png" style="height: 5vh; min-height: 20px"/>
     <div *ngIf="mobileMenu" id="toggle" class="icon" (click)="toggleMenu()">
         <label for="toggle"><img [src]="menuIcon" style="height: 2vh; min-height: 20px"></label>
     </div>
