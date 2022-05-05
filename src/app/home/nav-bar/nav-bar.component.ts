@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener } from '@angular/core';
+import { Component, ElementRef, OnInit, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
 
 
@@ -47,7 +47,8 @@ export class NavBarComponent implements OnInit {
     }
   }
 
-  
-
+  moveDown(){
+    window.scrollBy(0, window.innerHeight);
+  }
 
 }

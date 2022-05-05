@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./portfolio.component.scss']
 })
 export class PortfolioComponent implements OnInit {
-
+  title = 'work'
   @Input() section!: string;
   portfolioItems: PortfolioItem[] | undefined;
   viewMode = 'individual';

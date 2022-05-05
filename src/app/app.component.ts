@@ -1,4 +1,3 @@
-import { elementEventFullName } from '@angular/compiler/src/view_compiler/view_compiler';
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 
 

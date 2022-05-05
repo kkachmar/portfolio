@@ -30,20 +30,6 @@
   }
 }
 
-.banner {
-  width: 100vw;
-  max-height: 65vh;
-  text-align: center;
-  background-color: #202020;
-  overflow: hidden;
-
-  img {
-    width: 100%;
-    height: auto;
-    margin-top: -15vw;
-  }
-}
-
 .full-width {
   padding-left: 20vw;
   padding-right: 20vw;
@@ -82,36 +68,6 @@
         margin-bottom: 4vh;
         margin-top: 4vh;
 
-      }
-
-      .full-image {
-        img {
-          width: 60vw !important;
-        }
-      }
-
-      .thirds-image {
-        display: flex;
-        justify-content: space-between;
-        img {
-          width: 18vw !important;
-          margin-left: 0px !important;
-          margin-bottom: 2vh;
-          height: auto !important;
-          align-self:flex-start
-        }
-      }
-
-      .half-image {
-        display: flex;
-        justify-content: space-between;
-        img {
-          width: 28vw !important;
-          margin-left: 0px !important;
-          margin-bottom: 2vh;
-          height: auto !important;
-          align-self:flex-start
-        }
       }
 
       .text {
