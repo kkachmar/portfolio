@@ -63,16 +63,21 @@
 
 @media screen and (max-width: 850px) {
   .menu {
-    width: 100%;
-    max-height: 100%;
+    width: 100vw !important;
+    height: 100vh;
+    margin-top: -1vh;
+    max-height: 100vh;
     overflow: hidden;
     display: block;
+    background-color: #202020;
   }
 
   .list {
     flex-direction: column;
     align-items: center;
     padding: 5px;
+    background-color: #202020;
+    height: 100vh
   }
 
   label {

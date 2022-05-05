@@ -41,8 +41,10 @@ export class NavBarComponent implements OnInit {
   }
 
   toggleMenu(){
+    if(window.innerWidth < 850) {
     this.menuVisible = !this.menuVisible;
     console.log(this.menuVisible )
+    }
   }
 
   

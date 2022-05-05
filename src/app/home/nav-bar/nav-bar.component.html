@@ -5,8 +5,8 @@
     </div>
     <div *ngIf="menuVisible" class="menu">
         <ul class="list">
-            <li>Work</li>
-            <li (click)="redirect('about')">About</li>
+            <li (click)="redirect(''); toggleMenu()">Work</li>
+            <li (click)="redirect('about'); toggleMenu()">About</li>
             <li><div style="padding-left: .5vw"></div></li>
         </ul>
     </div>
