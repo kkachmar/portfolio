@@ -13,6 +13,7 @@ import { MacRedesignComponent } from './mac-redesign/mac-redesign.component';
 import { PlatformerGameComponent } from './platformer-game/platformer-game.component';
 import { BudgetBuddyComponent } from './budget-buddy/budget-buddy.component';
 import { TypeBookletComponent } from './type-booklet/type-booklet.component';
+import { AboutComponent } from './about/about.component';
 
 
 
@@ -31,7 +32,8 @@ import { TypeBookletComponent } from './type-booklet/type-booklet.component';
     MacRedesignComponent,
     PlatformerGameComponent,
     BudgetBuddyComponent,
-    TypeBookletComponent
+    TypeBookletComponent,
+    AboutComponent
   ],
   imports: [
     CommonModule

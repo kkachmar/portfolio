@@ -1,3 +1,4 @@
+import { AboutComponent } from './home/about/about.component';
 import { TypeBookletComponent } from './home/type-booklet/type-booklet.component';
 import { BudgetBuddyComponent } from './home/budget-buddy/budget-buddy.component';
 import { MacRedesignComponent } from './home/mac-redesign/mac-redesign.component';
@@ -20,6 +21,8 @@ const routes: Routes = [
   {path: 'mac-redesign', component: MacRedesignComponent},
   {path: 'budget-buddy', component: BudgetBuddyComponent},
   {path: 'type-booklet', component: TypeBookletComponent},
+  {path: 'about', component: AboutComponent},
+
 
   {path: '**', redirectTo: ''}
 ];

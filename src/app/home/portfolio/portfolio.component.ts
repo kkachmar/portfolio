@@ -72,7 +72,7 @@ export class PortfolioComponent implements OnInit {
           name:'budget-buddy', 
           displayName: 'Budget Buddy', 
           shortDescription: 'A functional web application that gamifies the budgeting experience. Build a budget, stay on track, and earn rewards! Budget Buddy helps you manage your money',
-          headerImage: 'assets/budget-buddy/budget-buddy-thumbnail.png',
+          headerImage: 'assets/budget-buddy/budget-buddy-browser.png',
           tags: ['FRONTEND DEVELOPMENT', 'ANGULAR', 'UI DESIGN'] 
         },
 
@@ -85,14 +85,14 @@ export class PortfolioComponent implements OnInit {
         },
         
         
-        {
+        /*{
           name:'freelance', 
           displayName: 'Freelance Mobile App', 
           shortDescription: "A mobile app designed and developed to enable freelance designers, developers, and creatives to share work, collaborate, and build a professional network.",
           headerImage: 'assets/mockups/freelance-mockup.png',
           tags: ['UX DESIGN', 'ADOBE XD', 'IOS PROGRAMMING'],
           video: 'assets/mockups/freelance-demo.mov',
-        },
+        },*/
 
         
       ]

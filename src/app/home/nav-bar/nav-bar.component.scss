@@ -24,6 +24,11 @@
     margin-top: 1.25em;
     margin-bottom: 1em;
     margin-left: 2vw;
+
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
   }
 
   .list {
@@ -44,10 +49,16 @@
     }
   }
 
-  &:hover {
-    color: $green;
-    cursor: pointer;
+  li {
+
+    &:hover {
+      color: $green;
+      cursor: pointer;
+    }
+
   }
+
+  
 }
 
 @media screen and (max-width: 850px) {
